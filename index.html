@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="col-1">
+                <div class="wrapper">
+                    <h1>Login Account</h1>
+                    <form action="">
+                        <input type="text" placeholder="Email Address">
+                            <input type="password" placeholder="Password" class="pasword-input">
+                            <!-- <span> -->
+                                <i class="far fa-eye"></i>  
+                                <i class="far fa-eye-slash"></i>
+                            <!-- </span> -->
+                        <button type="submit" class="login-button">Login Account</button>
+                    </form>
+                    <p class="sign-up-text">Don't Have A Account<a class="" href="#">Sign Up</a></p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="wrapper">
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">English (IN)</option>
+                            <option value="">Sinhala</option>
+                        </select>
+                    </div>
+                    <div class="container">
+                        <h1>Login</h1>
+                        <div class="image">
+                            <img src="assets/PinClipart.com_social-media-clip-art_515433.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script> 
+        const eye1=document.querySelector('.fa-eye');
+        const eye2=document.querySelector('.fa-eye-slash');
+        const passwordInput=document.querySelector('.pasword-input'); 
+
+        console.log(eye1);
+        console.log(eye2);  
+
+        eye1.addEventListener('click',()=>{
+            eye1.style.display="none";   
+            eye2.style.display="inline-block";    
+            passwordInput.type="text" 
+        })
+
+        eye2.addEventListener('click',()=>{ 
+            eye2.style.display="none";     
+            eye1.style.display="inline-block";  
+            passwordInput.type="password"   
+        })
+    </script>
+</body>
+</html>

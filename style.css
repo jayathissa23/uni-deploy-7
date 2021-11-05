@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  font-size: 18px; }
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
+h1 {
+  font-size: 36px; }
+
+:root {
+  --color-Primary: #2991F1;
+  --color-border-bottom: #C1C1C1; }
+
+a {
+  text-decoration: none; }
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  border-radius: 0px 32px 32px 0px; }
+  main .container {
+    display: flex; }
+    main .container .col-1 {
+      flex-basis: 60%;
+      background: #fff;
+      width: 100%;
+      border-radius: 20px 20px 20px 20px;
+      height: 100vh; }
+      main .container .col-1 .wrapper {
+        width: 80%;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 104px; }
+        main .container .col-1 .wrapper h1 {
+          font-weight: 700; }
+        main .container .col-1 .wrapper form {
+          width: 90%;
+          margin: 10px auto;
+          display: flex;
+          flex-direction: column;
+          margin-top: 45px; }
+          main .container .col-1 .wrapper form input {
+            width: 95%;
+            margin: 0px auto;
+            border: none;
+            border-bottom: 1px solid #C1C1C1;
+            font-family: 'Josefin Sans', sans-serif;
+            padding-top: 35px;
+            padding-bottom: 5px; }
+            main .container .col-1 .wrapper form input:focus {
+              outline: none;
+              width: 100%;
+              transition: width .2s;
+              border-bottom: 2px solid var(--color-Primary); }
+          main .container .col-1 .wrapper form i {
+            transform: translate(1796%, -138%);
+            text-align: right;
+            color: gray;
+            cursor: pointer;
+            width: 5%; }
+          main .container .col-1 .wrapper form .fa-eye-slash {
+            display: none;
+            transition: all .2s; }
+          main .container .col-1 .wrapper form button {
+            border: none;
+            background: #2991F1;
+            color: #fff;
+            font-weight: bold;
+            width: 95%;
+            margin: 0px auto;
+            cursor: pointer;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 39px;
+            font-size: 24px;
+            transition: width .2s; }
+            main .container .col-1 .wrapper form button:hover {
+              width: 100%; }
+        main .container .col-1 .wrapper p {
+          color: var(--color-border-bottom);
+          text-align: center;
+          padding-top: 30px;
+          font-size: 15px; }
+          main .container .col-1 .wrapper p a {
+            color: var(--color-Primary);
+            padding-left: 8px;
+            font-size: 15px; }
+    main .container .col-2 {
+      flex-basis: 40%;
+      border-radius: 0px 0px 0px 0px;
+      background: var(--color-Primary); }
+      main .container .col-2 .wrapper {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        color: #fff; }
+        main .container .col-2 .wrapper .select {
+          display: flex;
+          justify-content: flex-end;
+          padding-top: 17px; }
+          main .container .col-2 .wrapper .select select {
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer; }
+        main .container .col-2 .wrapper .container {
+          display: flex;
+          flex-direction: column;
+          margin-top: 69px; }
+          main .container .col-2 .wrapper .container h1 {
+            text-align: center;
+            margin-bottom: 58px; }
+          main .container .col-2 .wrapper .container .image img {
+            width: 100%; }
+
+@media (max-width: 920px) {
+  main .container {
+    flex-direction: column; }
+  main .container .col-2 {
+    border-radius: 32px 32px 32px 32px;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 42px; }
+  main .container .col-2 .wrapper .container {
+    margin-top: 45px; } }
